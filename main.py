@@ -34,7 +34,7 @@ def trigger_rest_endpoint():
         "login": "XXXXX",
         "pass": "XXXX",
         "recipient": "48600700800",
-        "message": "Domena exitzero.io dostepna!"
+        "message": "Domain is available!"
     }
     try:
         response = requests.get(endpoint_url, params=params)
@@ -52,7 +52,7 @@ def monitor_domain(domain):
 
 
 if __name__ == "__main__":
-    domain_to_check = "exitzero.io"
+    domain_to_check = "your_domain.io"
     check_interval = 3600  # Checks every hour
 
     monitor_domain(domain_to_check)
